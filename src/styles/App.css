@@ -1,0 +1,112 @@
+header {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0px 50px 0px rgba(66, 6, 9, 0.507);
+}
+
+header .left {
+  width: 92vw;
+  height: 80vh;
+  background-image: url("../assets/profil.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+header .menu {
+  display: flex;
+  margin-top: 2vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .icon {
+  padding: 1vw;
+  width: 5vw;
+  height: 5vw;
+  margin-left: 2vw;
+}
+
+header .menuContainer {
+  height: auto;
+  margin-right: 15vw;
+}
+
+header .menuContainer a {
+  font-weight: 300;
+  font-size: 1.1vw;
+  margin: 1.5vw;
+  text-decoration: none; 
+  position: relative; 
+}
+
+header .menuContainer .active:after{
+  content: "";
+  position: absolute;
+  width: 1vw;
+  height: 0.1vw;
+  left: 0;
+  bottom: -0.5vw;
+  background-color: white;
+}
+
+header .menuLink {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+header .menuLink a {
+  margin-right: 1vw;
+}
+
+header .right {
+  display: inline-block;
+  width: 8vw;
+  height: 80vh;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+}
+  
+.text {
+  font-family: "Arial", sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
+
+.text-stroke {
+  fill: none;
+  stroke: black;
+  stroke-width: 1.4vw;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  animation: 3s dash 2s infinite alternate;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: -900;
+  } to {
+    stroke-dashoffset: 0;
+  }
+}
+
+main {
+  height: 200vh;
+  position: relative;
+}
+
+main .container {
+  position: absolute;
+  top: -1vw;
+  width: 84vw;
+  height: 50vh;
+  background-color: white;
+  margin-left: 4vw;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.226);
+}
