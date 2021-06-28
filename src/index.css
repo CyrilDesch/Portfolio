@@ -18,8 +18,6 @@ body {
   overflow: overlay;
   min-height: 100vh;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -33,7 +31,7 @@ code {
     monospace;
 }
 
-p, a, input, select, ul, li, label, span, form, div, button {
+p, h1, a, input, select, ul, li, label, span, form, div, button {
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
 	padding: 0;

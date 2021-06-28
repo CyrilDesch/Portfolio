@@ -5,6 +5,7 @@ import { Link, animateScroll } from "react-scroll";
 import { SocialIcon } from 'react-social-icons';
 import useScroll from "../hooks/useScroll";
 import UpArrow from "../assets/UpArrow";
+import PlayButton from "../assets/PlayButton";
 
 const App = () => {
   const scrolled = useScroll();
@@ -117,7 +118,7 @@ const App = () => {
         </div>
         <div className="right">
           <svg class="intro" viewbox="0 0 200 86" preserveAspectRatio="xMidYMid meet">
-            <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-1.6vw" class="text text-stroke" clip-path="url(#text1)" transform="rotate(90)">FREELANCE</text>
+            <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-2vw" class="text text-stroke" clip-path="url(#text1)" transform="rotate(90)">FREELANCE</text>
             <defs>
               <clipPath id="text1">
                 <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-1.6vw" class="text">FREELANCE</text>
@@ -128,40 +129,49 @@ const App = () => {
       </header>
       <main>
         <div className="container">
-          <div className="left">
-            <h1>
-              En quoi je peux<br/>
-              être utile ?
-            </h1>
-            <p>
-              Mes projets &darr;
-            </p>
+          <div>
+            <div className="left">
+              <div>
+                <h1>
+                  En quoi je<br/>
+                  peux être<br/>
+                  utile ?
+                </h1>
+                <p>
+                  Mes projets &darr;
+                </p>
+              </div>
+            </div>
+            <div className="middle">
+              <h1>Mon dernier<br/>projet</h1>
+              <div  className="buttonPlay">
+                <PlayButton />
+              </div>
+              <p>Healven</p>
+            </div>
+            <div className="right">
+              <div>
+                <h1>Développer</h1>
+                <p>blabla</p>
+              </div>
+              <div>
+                <h1>Conseiller</h1>
+                <p>blabla</p>
+              </div>
+              <div>
+                <h1>Manger vos morts</h1>
+                <p>blabla</p>
+              </div>
+              <div>
+                <h1>Baiser votre femme</h1>
+                <p>Je sais bien faire tkt</p>
+              </div>
+            </div>
           </div>
-          <div className="middle">
-            
-          </div>
-          <div className="right">
-            <div>
-              <h1>Blabla</h1>
-              <p>blabla</p>
-            </div>
-            <div>
-              <h1>Blabla</h1>
-              <p>blabla</p>
-            </div>
-            <div>
-              <h1>Blabla</h1>
-              <p>blabla</p>
-            </div>
-            <div>
-              <h1>Blabla</h1>
-              <p>blabla</p>
-            </div>
-          </div>
+          {scrolled ?
+            <UpArrow className="iconUp" onClick={() => animateScroll.scrollToTop()} />
+          : null}
         </div>
-        {scrolled ?
-          <UpArrow className="iconUp" onClick={() => animateScroll.scrollToTop()} />
-        : null}
       </main>
     </>
   );
