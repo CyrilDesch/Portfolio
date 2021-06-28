@@ -5,6 +5,7 @@ header {
 }
 
 header .left {
+  position: relative;
   width: 92vw;
   height: 80vh;
   background-image: url("../assets/profil.jpg");
@@ -13,11 +14,12 @@ header .left {
 }
 
 header .menu {
+  width: 92vw;
   display: flex;
-  margin-top: 2vh;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 }
 
 header .icon {
@@ -33,11 +35,12 @@ header .menuContainer {
 }
 
 header .menuContainer a {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1vw;
   margin: 1.5vw;
   text-decoration: none; 
   position: relative; 
+  cursor: pointer;
 }
 
 header .menuContainer .active:after{
@@ -96,17 +99,71 @@ header .right {
   }
 }
 
+header .left .txt-rotate {
+  font-weight: 200;
+  font-size: 4vw;
+  position: absolute;
+  bottom: 2vw;
+  left: 3.8vw;
+  line-height: 4.4vw;
+  height: 4.4vw;
+}
+
+header .left .wrap {
+  padding-right: 0.5vw;
+}
+
 main {
   height: 200vh;
   position: relative;
+}
+
+main p {
+  color: black;
 }
 
 main .container {
   position: absolute;
   top: -1vw;
   width: 84vw;
-  height: 50vh;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
   background-color: white;
   margin-left: 4vw;
   box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.226);
+}
+
+main .iconUp {
+  width: 3.5vw;
+  height: 3.5vw;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  z-index: 150;
+  background-color: white;
+  padding: 0.1vw;
+  border-radius: 2.5vw;
+  box-shadow: 0 0px 5px 0px rgba(66, 6, 9, 0.432);
+  cursor: pointer;
+}
+
+main .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+main .container .left {
+  width: 20vw;
+}
+
+main .container .middle {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 15vw;
+  border: solid 0.2vw rgb(179, 179, 179);
+}
+
+main .container .right {
+  width: 20vw;
 }

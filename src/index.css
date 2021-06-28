@@ -39,4 +39,5 @@ p, a, input, select, ul, li, label, span, form, div, button {
 	padding: 0;
 	text-decoration: none;
 	color: white;
+  user-select: none;
 }
