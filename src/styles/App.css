@@ -1,0 +1,266 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0px 50px 0px rgba(66, 6, 9, 0.507);
+  z-index: 20;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 94vw;
+  height: 45vh;
+  background: rgb(55, 47, 61);
+  background: linear-gradient(
+    36deg,
+    rgba(55, 47, 61, 1) 0%,
+    rgba(220, 199, 204, 1) 100%
+  );
+}
+
+header .menu {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 100;
+}
+
+header .icon {
+  padding: 1vw;
+  width: 10vh;
+  height: 10vh;
+  margin-left: 2vw;
+  margin-top: 1vw;
+}
+
+header .menuContainer {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menuContainer a {
+  font-weight: 400;
+  width: 15vh;
+  text-align: center;
+  font-size: 2vh;
+  margin: 1.5vh;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+header .menuContainer a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 0.07vw;
+  bottom: -0.3vw;
+  width: 0;
+  background-color: white;
+  transition: width 0.2s;
+}
+
+header .menuContainer .active:after {
+  width: 2.5vw;
+}
+
+header .menuLink {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 8vw;
+}
+
+header .menuLink a {
+  margin-bottom: 1vw;
+}
+
+header .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vw;
+  height: 45vh;
+  max-height: 80vh;
+  background-color: white;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+}
+
+.text {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  font-size: min(7vh, 4vw);
+  padding-top: 0.5vw;
+  color: black;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: -900;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+header .iconUp {
+  width: 7vh;
+  height: 7vh;
+  position: fixed;
+  bottom: 1.8vh;
+  right: 0.6vw;
+  z-index: 150;
+  background-color: #867984;
+  padding: 0.1vw;
+  border-radius: 4vh;
+  box-shadow: 0 0px 2px 0px #cbb8c7;
+  cursor: pointer;
+}
+
+footer {
+  border-top: solid 0.3vw #867984;
+  background-color: #7b6d78;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+footer div:first-child {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer div:first-child p {
+  width: 40vh;
+  user-select: all;
+  color: white;
+  font-size: 1.8vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer div:first-child .icon {
+  width: 2.5vw;
+  height: auto;
+  margin-left: -5vw;
+  margin-right: -7vw;
+  cursor: pointer;
+}
+
+footer div:first-child .barTitle {
+  color: white;
+  font-weight: 300;
+}
+
+.code {
+  width: 25vw;
+  margin-top: 5vw;
+  margin-left: 3vw;
+}
+
+pre,
+pre span {
+  font-size: 2vh;
+  font-family: "Montserrat";
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding-bottom: 0.2em;
+}
+
+.wrap {
+  font-family: "Montserrat";
+}
+
+header > div:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .iconUp {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  header > div:first-child {
+    display: block;
+  }
+
+  footer div:first-child {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  footer div:first-child p {
+    font-size: 2vh;
+    width: 90vw;
+  }
+
+  footer div:first-child .icon {
+    width: 6vw;
+    margin: 3vw;
+  }
+
+  header .menuContainer {
+    display: none;
+  }
+
+  header .right {
+    display: none;
+  }
+
+  header .menuLink {
+    right: 3vw;
+  }
+  header .left {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .iconUp {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  footer {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  footer div:first-child p {
+    font-size: 1.5vh;
+  }
+
+  footer div:first-child .icon {
+    width: 8vw;
+    margin: 3vw;
+  }
+
+  header .icon {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 3vw;
+    margin-top: 3vw;
+  }
+}

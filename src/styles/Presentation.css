@@ -1,0 +1,557 @@
+#presentation {
+  position: relative;
+}
+
+#presentation p {
+  color: #272727;
+}
+
+#presentation > div {
+  position: relative;
+  top: -2vw;
+  width: 90vw;
+  left: 5vw;
+}
+
+#presentation > div > div:first-child {
+  background-color: white;
+  box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
+}
+
+#presentation .firstContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 7vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#presentation .firstContainer .left {
+  width: 28vw;
+  height: 28vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 6vw;
+}
+
+#presentation .firstContainer .middle {
+  width: 28vw;
+  height: 28vw;
+  padding: 3vw;
+  border-radius: 14vw;
+  border: solid 0.2vw #81747e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#presentation .firstContainer .right {
+  width: 28vw;
+  padding-left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#presentation .firstContainer .left h1 {
+  font-size: 3.3vw;
+  color: #272727;
+}
+
+#presentation .firstContainer .left a {
+  display: block;
+  width: 12vw;
+  font-size: 1vw;
+  margin-top: 2vw;
+  padding: 1vw;
+  text-align: center;
+  color: white;
+  background-color: #272727;
+  border-radius: 1vw;
+}
+
+#presentation .firstContainer .middle .buttonPlay {
+  width: 8vw;
+  height: 8vw;
+  background-image: url("../assets/bacle_icon.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4vw;
+}
+
+#presentation .firstContainer .middle .buttonPlay > svg {
+  width: 2.5vw;
+  height: 2.5vw;
+  padding-left: 0.5vw;
+  display: block;
+}
+
+#presentation .firstContainer .middle h1 {
+  height: 2vw;
+  font-size: 1.5vw;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+#presentation .firstContainer .middle p {
+  height: 2vw;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5vw;
+  color: #272727;
+}
+
+#presentation .firstContainer .right h1 {
+  font-size: 1.5vw;
+  color: #272727;
+}
+
+#presentation .firstContainer .right p {
+  font-size: 1vw;
+  width: 16vw;
+  color: #272727;
+}
+
+#presentation .secondContainer {
+  position: relative;
+  height: 35vw;
+  margin-top: 6vw;
+}
+
+#presentation .secondContainer > h1 {
+  font-size: 10.985vw;
+  letter-spacing: 0.3vw;
+  color: #e5dde3;
+  margin-left: -1.03vw;
+}
+
+#presentation .secondContainer > h2 {
+  position: absolute;
+  left: 9%;
+  top: 4.2vw;
+  font-size: 1.5vw;
+  color: #272727;
+}
+
+#presentation .secondContainer > div {
+  position: absolute;
+  top: 10.6vw;
+  background-color: #e5dde3;
+  width: 100%;
+}
+
+#presentation .secondContainer div h1 {
+  margin-left: 9%;
+  margin-top: 5vw;
+  color: #272727;
+  font-size: 1.5vw;
+}
+
+#presentation .secondContainer div p {
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 1vw;
+  color: #272727;
+  font-size: 1.2vw;
+  text-align: justify;
+  padding-bottom: 5vw;
+}
+
+#presentation .secondContainer div p > strong {
+  color: rgb(70, 70, 70);
+}
+
+#presentation .thirdContainer {
+  position: relative;
+  top: 0;
+}
+
+#presentation .thirdContainer > h1,
+#presentation .fourthContainer > h1 {
+  color: #272727;
+  text-align: center;
+  font-size: 4.3vw;
+  font-weight: 600;
+  margin-top: 8vw;
+}
+
+#presentation .thirdContainer > h2,
+#presentation .fourthContainer > h2 {
+  color: #675c65;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.competencesContainer {
+  width: 100%;
+  margin-top: 4vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-right: 2vw;
+  padding-left: 2vw;
+  row-gap: 2vw;
+}
+
+.competenceContainer {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f0e9ee;
+  padding: 1vw;
+}
+
+.competenceContainer .icon {
+  width: 7vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.competenceContainer h3 {
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+  color: #272727;
+}
+
+.competenceContainer ul {
+  list-style-type: none;
+}
+
+.competenceContainer li {
+  width: 13vw;
+  font-size: 1vw;
+  text-align: center;
+  color: #272727;
+}
+
+#presentation .fourthContainer {
+  position: relative;
+  top: 0;
+  padding-bottom: 3vw;
+}
+
+.valeursContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  gap: 2vw;
+}
+
+.valeurCard {
+  width: 100%;
+  padding: 2vw;
+  background-color: #f0e9ee;
+}
+
+.valeurCard .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3vw;
+}
+
+.valeurCard h1 {
+  width: 25vw;
+  vertical-align: middle;
+  padding-left: 1vw;
+  display: inline-block;
+  color: #272727;
+  font-size: 1.3vw;
+}
+
+.valeurCard p {
+  padding-top: 1vw;
+  font-size: 1vw;
+  text-align: justify;
+}
+
+@media screen and (max-width: 950px) {
+  #presentation .firstContainer .left {
+    width: 30vw;
+    height: min(45vw, 300px);
+  }
+
+  #presentation .firstContainer .middle {
+    width: min(45vw, 300px);
+    height: min(45vw, 300px);
+    border-radius: 25vw;
+  }
+
+  #presentation .firstContainer .right {
+    width: 100vw;
+    margin-top: 5vh;
+    background-color: #e5dde3;
+    padding: 2vw;
+  }
+
+  #presentation .firstContainer .left a {
+    font-size: 1.7vw;
+    width: 18vw;
+  }
+
+  #presentation .firstContainer .left h1 {
+    font-size: 4vw;
+  }
+
+  #presentation .firstContainer .middle p,
+  #presentation .firstContainer .middle h1 {
+    font-size: 2vw;
+  }
+
+  #presentation .firstContainer .middle .buttonPlay {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 4.5vw;
+  }
+
+  #presentation .firstContainer .middle .buttonPlay > svg {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  #presentation .firstContainer .right h1 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    text-align: center;
+  }
+
+  #presentation .firstContainer .right p {
+    width: 24vw;
+    font-size: 1.7vw;
+    text-align: center;
+  }
+
+  #presentation .secondContainer > h2 {
+    top: 4.5vw;
+    font-size: 2vw;
+  }
+
+  #presentation .secondContainer div h1 {
+    font-size: 2.5vw;
+  }
+
+  #presentation .secondContainer div p {
+    font-size: 1.7vw;
+  }
+
+  .competencesContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .competenceContainer {
+    padding: 3vw;
+  }
+
+  .competenceContainer .icon {
+    width: 9vw;
+  }
+
+  .competenceContainer h3 {
+    font-size: 2vw;
+  }
+
+  .competenceContainer li {
+    width: 21vw;
+    font-size: 1.7vw;
+  }
+
+  #presentation .thirdContainer > h1,
+  #presentation .fourthContainer > h1 {
+    font-size: 6vw;
+  }
+
+  #presentation .thirdContainer > h1 {
+    padding-top: 4vw;
+  }
+
+  #presentation .thirdContainer > h2 {
+    font-size: 3vw;
+  }
+
+  .valeursContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .valeurCard .icon {
+    width: 5vw;
+  }
+
+  .valeurCard h1 {
+    width: 70vw;
+    font-size: 2vw;
+  }
+
+  .valeurCard p {
+    padding-top: 1vw;
+    font-size: 1.7vw;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #sakura {
+    display: none;
+  }
+
+  #presentation > div {
+    width: 100vw;
+    left: 0;
+    top: 0;
+  }
+
+  #presentation .firstContainer .left {
+    width: 35vw;
+    align-items: inherit;
+    padding-right: 2vw;
+  }
+
+  #presentation .firstContainer .right {
+    width: 100vw;
+    margin-top: 5vh;
+    background-color: #e5dde3;
+    padding: 5vw;
+    padding-top: 8.5vw;
+  }
+
+  #presentation .firstContainer .left a {
+    font-size: 1.7vw;
+    width: 18vw;
+  }
+
+  #presentation .firstContainer .left h1 {
+    font-size: 5.5vw;
+  }
+
+  #presentation .firstContainer .middle p,
+  #presentation .firstContainer .middle h1 {
+    font-size: 2.5vw;
+  }
+
+  #presentation .firstContainer .middle .buttonPlay {
+    width: 11vw;
+    height: 11vw;
+    border-radius: 5.5vw;
+  }
+
+  #presentation .firstContainer .middle .buttonPlay > svg {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  #presentation .firstContainer .right h1 {
+    font-size: 3vw;
+    text-align: left;
+  }
+
+  #presentation .firstContainer .right p {
+    width: 100%;
+    font-size: 2.2vw;
+    text-align: left;
+    margin-top: 1vw;
+    margin-bottom: 3.5vw;
+  }
+
+  #presentation .secondContainer {
+    position: relative;
+    height: 40vw;
+    margin-top: 6vw;
+  }
+
+  #presentation .secondContainer > h1 {
+    font-size: 13.23vw;
+    letter-spacing: -0.5vw;
+    color: #e5dde3;
+    margin-left: -1.03vw;
+  }
+
+  #presentation .secondContainer > h2 {
+    position: absolute;
+    left: 9%;
+    top: 6.5vw;
+    font-size: 2.5vw;
+    color: #272727;
+  }
+
+  #presentation .secondContainer > div {
+    position: absolute;
+    top: 12.8vw;
+    background-color: #e5dde3;
+    width: 100%;
+  }
+
+  #presentation .secondContainer div h1 {
+    margin-left: 5%;
+    margin-top: 5vw;
+    font-size: 3vw;
+  }
+
+  #presentation .secondContainer div p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2vw;
+  }
+
+  #presentation .secondContainer div p > strong {
+    color: rgb(70, 70, 70);
+  }
+
+  #presentation .thirdContainer > h1,
+  #presentation .fourthContainer > h1 {
+    font-size: 8vw;
+  }
+
+  #presentation .thirdContainer > h2,
+  #presentation .fourthContainer > h2 {
+    font-size: 4vw;
+  }
+
+  .competencesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .competenceContainer {
+    padding: 3vw;
+  }
+
+  .competenceContainer .icon {
+    width: 11vw;
+  }
+
+  .competenceContainer h3 {
+    font-size: 3vw;
+  }
+
+  .competenceContainer li {
+    width: 35vw;
+    font-size: 2vw;
+  }
+
+  .valeurCard .icon {
+    width: 8vw;
+  }
+
+  .valeurCard h1 {
+    width: 70vw;
+    font-size: 3vw;
+  }
+
+  .valeurCard p {
+    padding-top: 1vw;
+    font-size: 2.2vw;
+    text-align: justify;
+  }
+
+  .code {
+    padding-top: 5vh;
+    font-size: 1.8vh;
+  }
+}
