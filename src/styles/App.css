@@ -127,7 +127,6 @@ main .container {
   top: -1vw;
   width: 84vw;
   margin-left: 4vw;
-  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.226);
   height: 200vh;
 }
 
@@ -139,6 +138,7 @@ main .container > div {
   padding-top: 4vw;
   justify-content: space-around;
   background-color: white;
+  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.226);
 }
 
 main .iconUp {
