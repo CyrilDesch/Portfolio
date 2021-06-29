@@ -104,7 +104,7 @@ header .left .txt-rotate {
   font-weight: 200;
   font-size: 4vw;
   position: absolute;
-  bottom: 2vw;
+  bottom: 3vw;
   left: 3.8vw;
   line-height: 4.4vw;
   height: 4.4vw;
@@ -124,28 +124,31 @@ main p {
 
 main .postItBG {
   position: absolute;
-  top: -30vw;
-  width: 98vw;
+  top: 3vw;
+  width: 99vw;
   z-index: -10;
 }
 
-main .firstContainer {
+main > div {
   position: absolute;
-  top: -1vw;
+  height: 200vh;
+  top: -2vw;
   width: 84vw;
   margin-left: 4vw;
-  height: 200vh;
 }
 
-main .firstContainer > div {
+main > div > div {
   height: 98%;
+  background-color: white;
+  box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
+}
+
+main .firstContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
   padding-top: 4vw;
   justify-content: space-around;
-  background-color: white;
-  box-shadow: 0 0px 50px 0px rgba(0, 0, 0, 0.226);
 }
 
 main .iconUp {
@@ -158,7 +161,7 @@ main .iconUp {
   background-color: white;
   padding: 0.1vw;
   border-radius: 2.5vw;
-  box-shadow: 0 0px 5px 0px rgba(66, 6, 9, 0.432);
+  box-shadow: 0 0px 5px 0px rgba(219, 182, 184, 0.432);
   cursor: pointer;
 }
 
@@ -250,6 +253,27 @@ main .firstContainer .right h1 {
 
 main .firstContainer .right p {
   font-size: 1vw;
-  width: 18vw;
+  width: 16vw;
   color: rgb(88, 88, 88);
+}
+
+main .secondContainer {
+  position: relative;
+}
+
+main .secondContainer > h1 {
+  font-size: 8vw;
+  letter-spacing: 0.3vw;
+  text-align: center;
+  color: rgb(230, 230, 230);
+  padding-top: 5vw;
+  transform: scale(1, 1.05);
+}
+
+main .secondContainer > h2 {
+  position: absolute;
+  left: 17%;
+  top: 7.5vw;
+  font-size: 2vw;
+  color: rgb(48, 48, 48);
 }

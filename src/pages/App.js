@@ -128,46 +128,52 @@ const App = () => {
         </div>
       </header>
       <main>
+        {scrolled ?
+          <UpArrow className="iconUp" onClick={() => animateScroll.scrollToTop()} />
+        : null}
         <img className="postItBG" src="./assets/postit.png" alt="Post it BG" />
-        <div className="firstContainer">
+        <div>
           <div>
-            <div className="left">
-              <div>
-                <h1>
-                  En quoi je<br/>
-                  peux être<br/>
-                  utile ?
-                </h1>
-                <p>
-                  Mes projets &darr;
-                </p>
+            <div className="firstContainer">
+              <div className="left">
+                <div>
+                  <h1>
+                    En quoi je<br/>
+                    peux être<br/>
+                    utile ?
+                  </h1>
+                  <p>
+                    Mes projets &darr;
+                  </p>
+                </div>
+              </div>
+              <div className="middle">
+                <h1>Mon dernier<br/>projet</h1>
+                <div  className="buttonPlay">
+                  <PlayButton />
+                </div>
+                <p>Healven</p>
+              </div>
+              <div className="right">
+                <div>
+                  <h1>Développer</h1>
+                  <p> Je suis développeur mobile spécialisé en React Native pour créer des applications Android et iOS.</p>
+                </div>
+                <div>
+                  <h1>Conseiller</h1>
+                  <p>J'accompagne les entreprises dans la réalisation et la maintenance de leur application mobile sur tout type de projets et à n'importe quel stade d'avancement.</p>
+                </div>
+                <div>
+                  <h1>Organiser</h1>
+                  <p>J’ai une aspiration certaine pour les méthodes agiles et la communication au sein d'un projet.</p>
+                </div>
               </div>
             </div>
-            <div className="middle">
-              <h1>Mon dernier<br/>projet</h1>
-              <div  className="buttonPlay">
-                <PlayButton />
-              </div>
-              <p>Healven</p>
-            </div>
-            <div className="right">
-              <div>
-                <h1>📱 Développer</h1>
-                <p> Je suis développeur mobile spécialisé en React Native pour créer des applications Android et iOS.</p>
-              </div>
-              <div>
-                <h1>💡 Conseiller</h1>
-                <p>J'accompagne les entreprises dans la réalisation et la maintenance de leur application mobile sur tout type de projets et à n'importe quel stade d'avancement.</p>
-              </div>
-              <div>
-                <h1>⏱ Organiser</h1>
-                <p>J’ai une aspiration certaine pour les méthodes agiles et la communication au sein d'un projet.</p>
-              </div>
+            <div className="secondContainer">
+              <h1>PRESENTATION</h1>
+              <h2>Qui suis-je ?</h2>
             </div>
           </div>
-          {scrolled ?
-            <UpArrow className="iconUp" onClick={() => animateScroll.scrollToTop()} />
-          : null}
         </div>
       </main>
     </>
