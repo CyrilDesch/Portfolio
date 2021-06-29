@@ -113,7 +113,7 @@ const App = () => {
           <span
             class="txt-rotate"
             data-period="2000"
-            data-rotate='["Développeur", "mobile et web"]'>
+            data-rotate='["Développeur", "mobile"]'>
           </span>
         </div>
         <div className="right">
@@ -128,7 +128,8 @@ const App = () => {
         </div>
       </header>
       <main>
-        <div className="container">
+        <img className="postItBG" src="./assets/postit.png" alt="Post it BG" />
+        <div className="firstContainer">
           <div>
             <div className="left">
               <div>
@@ -151,20 +152,16 @@ const App = () => {
             </div>
             <div className="right">
               <div>
-                <h1>Développer</h1>
-                <p>blabla</p>
+                <h1>📱 Développer</h1>
+                <p> Je suis développeur mobile spécialisé en React Native pour créer des applications Android et iOS.</p>
               </div>
               <div>
-                <h1>Conseiller</h1>
-                <p>blabla</p>
+                <h1>💡 Conseiller</h1>
+                <p>J'accompagne les entreprises dans la réalisation et la maintenance de leur application mobile sur tout type de projets et à n'importe quel stade d'avancement.</p>
               </div>
               <div>
-                <h1>Manger vos morts</h1>
-                <p>blabla</p>
-              </div>
-              <div>
-                <h1>Baiser votre femme</h1>
-                <p>Je sais bien faire tkt</p>
+                <h1>⏱ Organiser</h1>
+                <p>J’ai une aspiration certaine pour les méthodes agiles et la communication au sein d'un projet.</p>
               </div>
             </div>
           </div>

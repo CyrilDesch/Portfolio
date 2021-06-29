@@ -122,7 +122,14 @@ main p {
   color: black;
 }
 
-main .container {
+main .postItBG {
+  position: absolute;
+  top: -30vw;
+  width: 98vw;
+  z-index: -10;
+}
+
+main .firstContainer {
   position: absolute;
   top: -1vw;
   width: 84vw;
@@ -130,7 +137,7 @@ main .container {
   height: 200vh;
 }
 
-main .container > div {
+main .firstContainer > div {
   height: 98%;
   width: 100%;
   display: flex;
@@ -155,7 +162,7 @@ main .iconUp {
   cursor: pointer;
 }
 
-main .container .left {
+main .firstContainer .left {
   width: 28vw;
   height: 28vw;
   display: flex;
@@ -165,7 +172,7 @@ main .container .left {
   padding-right: 1vw;
 }
 
-main .container .middle {
+main .firstContainer .middle {
   width: 28vw;
   height: 28vw;
   padding: 3vw;
@@ -177,7 +184,7 @@ main .container .middle {
   align-items: center;
 }
 
-main .container .right {
+main .firstContainer .right {
   width: 28vw;
   height: 28vw;
   padding-left: 4vw;
@@ -186,15 +193,16 @@ main .container .right {
   justify-content: space-around;
 }
 
-main .container .left h1 {
+main .firstContainer .left h1 {
   width: 19vw;
   font-size: 3.3vw;
   color: black;
 }
 
-main .container .left p {
+main .firstContainer .left p {
   width: 12vw;
   font-size: 1vw;
+  margin-top: 2vw;
   padding: 1vw;
   text-align: center;
   color: white;
@@ -202,7 +210,7 @@ main .container .left p {
   border-radius: 1vw;
 }
 
-main .container .middle .buttonPlay {
+main .firstContainer .middle .buttonPlay {
   width: 8vw;
   height: 8vw;
   background-image: url("../assets/icon.png");
@@ -213,21 +221,21 @@ main .container .middle .buttonPlay {
   border-radius: 4vw;
 }
 
-main .container .middle .buttonPlay > svg {
+main .firstContainer .middle .buttonPlay > svg {
   width: 2.5vw;
   height: 2.5vw;
   padding-left: 0.5vw;
   display: block;
 }
 
-main .container .middle h1 {
+main .firstContainer .middle h1 {
   height: 2vw;
   font-size: 1.5vw;
   text-align: center;
   color: rgb(0, 0, 0);
 }
 
-main .container .middle p {
+main .firstContainer .middle p {
   height: 2vw;
   text-align: center;
   font-weight: 500;
@@ -235,12 +243,13 @@ main .container .middle p {
   color: rgb(88, 88, 88);
 }
 
-main .container .right h1 {
+main .firstContainer .right h1 {
   font-size: 1.5vw;
   color: rgb(59, 59, 59);
 }
 
-main .container .right p {
+main .firstContainer .right p {
   font-size: 1vw;
+  width: 18vw;
   color: rgb(88, 88, 88);
 }
