@@ -31,7 +31,7 @@ code {
     monospace;
 }
 
-p, h1, a, input, select, ul, li, label, span, form, div, button {
+p, h1, h2, h3, h4, a, input, select, ul, li, label, span, form, div, button {
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
 	padding: 0;

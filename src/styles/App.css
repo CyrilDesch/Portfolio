@@ -115,6 +115,7 @@ header .left .wrap {
 
 main {
   position: relative;
+  height: 180vw;
 }
 
 main p {
@@ -122,8 +123,8 @@ main p {
 }
 
 main .postItBG {
-  position: absolute;
-  top: 3vw;
+  position: relative;
+  top: 10vw;
   width: 99vw;
   z-index: -10;
 }
@@ -261,29 +262,165 @@ main .firstContainer .right p {
 
 main .secondContainer {
   position: relative;
-  height: 200vw;
+  height: 28.5vw;
+  margin-top: 8vw;
 }
 
 main .secondContainer > h1 {
   font-size: 10.097vw;
   letter-spacing: 0.3vw;
   color: rgb(230, 230, 230);
-  padding-top: 5vw;
   margin-left: -0.83vw;
 }
 
 main .secondContainer > h2 {
   position: absolute;
-  left: 17%;
-  top: 8vw;
-  font-size: 2vw;
+  left: 9%;
+  top: 4vw;
+  font-size: 1.5vw;
   color: rgb(48, 48, 48);
 }
 
 main .secondContainer > div {
   position: absolute;
-  top: 14.5vw;
+  top: 9.5vw;
   background-color: rgb(230, 230, 230);
-  height: 80vh;
   width: 100%;
+}
+
+main .secondContainer div h1 {
+  margin-left: 9%;
+  margin-top: 5vw;
+  color: black;
+  font-size: 1.5vw;
+}
+
+main .secondContainer div p {
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-top: 1vw;
+  color: black;
+  font-size: 1vw;
+  text-align: justify;
+  padding-bottom: 5vw;
+}
+
+main .secondContainer div p > strong {
+  color: rgb(70, 70, 70);
+}
+
+main .thirdContainer {
+  position: relative;
+  top: 0;
+}
+
+main .intersection {
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  width: 100%;
+  height: 6vw;
+}
+
+main .thirdContainer > h1, main .fourthContainer > h1 {
+  color: black;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+main .thirdContainer > h2, main .fourthContainer > h2 {
+  color: rgb(110, 110, 110);
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 600;
+}
+
+.competencesContainer {
+  width: 100%;
+  margin-top: 4vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4vw;
+}
+
+.competenceContainer {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.competenceContainer .icon {
+  width: 7vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.competenceContainer h3 {
+  font-size: 1vw;
+  text-align: center;
+  padding-top: 1.5vw;
+  padding-bottom: 0.5vw;
+  color: black;
+}
+
+.competenceContainer ul {
+  list-style-type: none;
+}
+
+.competenceContainer li {
+  width: 13vw;
+  font-size: 1vw;
+  text-align: center;
+  color: black;
+}
+
+main .fourthContainer {
+  position: relative;
+  top: 0;
+  padding-bottom: 3vw;
+}
+
+.valeursContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3vw;
+  row-gap: 2vw;
+}
+
+.valeurCard {
+  border-radius: 1vw;
+  width: 90%;
+  padding: 2vw;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 0 0.2vw 0 rgb(211, 211, 211);
+}
+
+.valeurCard .icon {
+  display: inline-block;
+  width: 4vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.valeurCard h1 {
+  width: 25vw;
+  padding-left: 1vw;
+  display: inline-block;
+  color: black;
+  font-size: 1.3vw;
+}
+
+.valeurCard p {
+  padding-top: 0.5vw;
+  font-size: 1vw;
+  text-align: justify;
+}
+
+footer {
+  display: block;
+  width: 100vw;
+  height: 10vw;
+  border-top: solid 0.3vw rgb(235, 235, 235);
+  background-color: rgb(204, 204, 204);
 }
