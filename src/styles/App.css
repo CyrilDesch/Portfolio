@@ -78,7 +78,6 @@ header .right {
 .text {
   font-family: "Arial", sans-serif;
   text-transform: uppercase;
-  display: block;
 }
 
 .text-stroke {
@@ -137,10 +136,13 @@ main > div {
   margin-left: 4vw;
 }
 
-main > div > div {
-  height: 98%;
+main > div > div:first-child {
   background-color: white;
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
+}
+
+main > div > div:last-child {
+  height: 2%;
 }
 
 main .firstContainer {
@@ -259,21 +261,29 @@ main .firstContainer .right p {
 
 main .secondContainer {
   position: relative;
+  height: 200vw;
 }
 
 main .secondContainer > h1 {
-  font-size: 8vw;
+  font-size: 10.097vw;
   letter-spacing: 0.3vw;
-  text-align: center;
   color: rgb(230, 230, 230);
   padding-top: 5vw;
-  transform: scale(1, 1.05);
+  margin-left: -0.83vw;
 }
 
 main .secondContainer > h2 {
   position: absolute;
   left: 17%;
-  top: 7.5vw;
+  top: 8vw;
   font-size: 2vw;
   color: rgb(48, 48, 48);
+}
+
+main .secondContainer > div {
+  position: absolute;
+  top: 14.5vw;
+  background-color: rgb(230, 230, 230);
+  height: 80vh;
+  width: 100%;
 }

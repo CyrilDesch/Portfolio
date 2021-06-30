@@ -118,7 +118,7 @@ const App = () => {
         </div>
         <div className="right">
           <svg class="intro" viewbox="0 0 200 86" preserveAspectRatio="xMidYMid meet">
-            <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-2vw" class="text text-stroke" clip-path="url(#text1)" transform="rotate(90)">FREELANCE</text>
+            <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-1.6vw" class="text text-stroke" clip-path="url(#text1)" transform="rotate(90)">FREELANCE</text>
             <defs>
               <clipPath id="text1">
                 <text text-anchor="start" textLength="76vh" fontSize="6.4vw" x="10" y="-1.6vw" class="text">FREELANCE</text>
@@ -172,8 +172,12 @@ const App = () => {
             <div className="secondContainer">
               <h1>PRESENTATION</h1>
               <h2>Qui suis-je ?</h2>
+              <div>
+                <h1></h1>
+              </div>
             </div>
           </div>
+          <div />
         </div>
       </main>
     </>
