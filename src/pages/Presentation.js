@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import '../styles/Projets.css';
+import '../styles/Presentation.css';
 import PlayButton from "../assets/PlayButton";
 import Competence from "../components/Competence";
 import ValeurCard from '../components/ValeurCard';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 //IMPORT ICON
 import AndroidIcon from '../assets/iconExt/android.svg';
@@ -39,16 +39,16 @@ const Presentation = ({ setActivePath }) => {
                     peux être<br/>
                     utile ?
                   </h1>
-                  <p>
-                    Mes projets &darr;
-                  </p>
+                  <Link className="clickable" to="/projets">
+                    Mes projets &#10132;
+                  </Link>
                 </div>
               </div>
               <div className="middle">
                 <h1>Mon dernier<br/>projet</h1>
-                <div  className="buttonPlay">
+                <a className="buttonPlay clickable" href="https://www.youtube.com/watch?v=_2ZOnqaXYk4" target="_blank" rel="noreferrer">
                   <PlayButton />
-                </div>
+                </a>
                 <p>Healven</p>
               </div>
               <div className="right">

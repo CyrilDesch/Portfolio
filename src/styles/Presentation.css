@@ -1,20 +1,20 @@
-main {
+#presentation {
   position: relative;
   height: 180vw;
 }
 
-main p {
+#presentation p {
   color: black;
 }
 
-main .postItBG {
+#presentation .postItBG {
   position: relative;
   top: 10vw;
   width: 99vw;
   z-index: -10;
 }
 
-main > div {
+#presentation > div {
   position: absolute;
   height: 200vh;
   top: -2vw;
@@ -22,16 +22,16 @@ main > div {
   margin-left: 4vw;
 }
 
-main > div > div:first-child {
+#presentation > div > div:first-child {
   background-color: white;
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
 }
 
-main > div > div:last-child {
+#presentation > div > div:last-child {
   height: 2%;
 }
 
-main .firstContainer {
+#presentation .firstContainer {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -40,7 +40,7 @@ main .firstContainer {
 }
 
 
-main .firstContainer .left {
+#presentation .firstContainer .left {
   width: 28vw;
   height: 28vw;
   display: flex;
@@ -50,7 +50,7 @@ main .firstContainer .left {
   padding-right: 1vw;
 }
 
-main .firstContainer .middle {
+#presentation .firstContainer .middle {
   width: 28vw;
   height: 28vw;
   padding: 3vw;
@@ -62,7 +62,7 @@ main .firstContainer .middle {
   align-items: center;
 }
 
-main .firstContainer .right {
+#presentation .firstContainer .right {
   width: 28vw;
   height: 28vw;
   padding-left: 4vw;
@@ -71,13 +71,14 @@ main .firstContainer .right {
   justify-content: space-around;
 }
 
-main .firstContainer .left h1 {
+#presentation .firstContainer .left h1 {
   width: 19vw;
   font-size: 3.3vw;
   color: black;
 }
 
-main .firstContainer .left p {
+#presentation .firstContainer .left a {
+  display: block;
   width: 12vw;
   font-size: 1vw;
   margin-top: 2vw;
@@ -88,7 +89,7 @@ main .firstContainer .left p {
   border-radius: 1vw;
 }
 
-main .firstContainer .middle .buttonPlay {
+#presentation .firstContainer .middle .buttonPlay {
   width: 8vw;
   height: 8vw;
   background-image: url("../assets/icon.png");
@@ -99,21 +100,21 @@ main .firstContainer .middle .buttonPlay {
   border-radius: 4vw;
 }
 
-main .firstContainer .middle .buttonPlay > svg {
+#presentation .firstContainer .middle .buttonPlay > svg {
   width: 2.5vw;
   height: 2.5vw;
   padding-left: 0.5vw;
   display: block;
 }
 
-main .firstContainer .middle h1 {
+#presentation .firstContainer .middle h1 {
   height: 2vw;
   font-size: 1.5vw;
   text-align: center;
   color: rgb(0, 0, 0);
 }
 
-main .firstContainer .middle p {
+#presentation .firstContainer .middle p {
   height: 2vw;
   text-align: center;
   font-weight: 500;
@@ -121,31 +122,31 @@ main .firstContainer .middle p {
   color: rgb(88, 88, 88);
 }
 
-main .firstContainer .right h1 {
+#presentation .firstContainer .right h1 {
   font-size: 1.5vw;
   color: rgb(59, 59, 59);
 }
 
-main .firstContainer .right p {
+#presentation .firstContainer .right p {
   font-size: 1vw;
   width: 16vw;
   color: rgb(88, 88, 88);
 }
 
-main .secondContainer {
+#presentation .secondContainer {
   position: relative;
   height: 28.5vw;
   margin-top: 8vw;
 }
 
-main .secondContainer > h1 {
+#presentation .secondContainer > h1 {
   font-size: 10.097vw;
   letter-spacing: 0.3vw;
   color: rgb(230, 230, 230);
   margin-left: -0.83vw;
 }
 
-main .secondContainer > h2 {
+#presentation .secondContainer > h2 {
   position: absolute;
   left: 9%;
   top: 4vw;
@@ -153,21 +154,21 @@ main .secondContainer > h2 {
   color: rgb(48, 48, 48);
 }
 
-main .secondContainer > div {
+#presentation .secondContainer > div {
   position: absolute;
   top: 9.5vw;
   background-color: rgb(230, 230, 230);
   width: 100%;
 }
 
-main .secondContainer div h1 {
+#presentation .secondContainer div h1 {
   margin-left: 9%;
   margin-top: 5vw;
   color: black;
   font-size: 1.5vw;
 }
 
-main .secondContainer div p {
+#presentation .secondContainer div p {
   margin-left: 9%;
   margin-right: 9%;
   margin-top: 1vw;
@@ -177,30 +178,30 @@ main .secondContainer div p {
   padding-bottom: 5vw;
 }
 
-main .secondContainer div p > strong {
+#presentation .secondContainer div p > strong {
   color: rgb(70, 70, 70);
 }
 
-main .thirdContainer {
+#presentation .thirdContainer {
   position: relative;
   top: 0;
 }
 
-main .intersection {
+#presentation .intersection {
   margin-top: 5vw;
   margin-bottom: 1vw;
   width: 100%;
   height: 6vw;
 }
 
-main .thirdContainer > h1, main .fourthContainer > h1 {
+#presentation .thirdContainer > h1, #presentation .fourthContainer > h1 {
   color: black;
   text-align: center;
   font-size: 5vw;
   font-weight: 600;
 }
 
-main .thirdContainer > h2, main .fourthContainer > h2 {
+#presentation .thirdContainer > h2, #presentation .fourthContainer > h2 {
   color: rgb(110, 110, 110);
   text-align: center;
   font-size: 2vw;
@@ -246,7 +247,7 @@ main .thirdContainer > h2, main .fourthContainer > h2 {
   color: black;
 }
 
-main .fourthContainer {
+#presentation .fourthContainer {
   position: relative;
   top: 0;
   padding-bottom: 3vw;

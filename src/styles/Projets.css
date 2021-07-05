@@ -1,205 +1,52 @@
-main {
+#projets {
   position: relative;
-  height: 180vw;
+  height: 50vw;
 }
 
-main p {
+#projets p {
   color: black;
 }
 
-main .postItBG {
+#projets .postItBG {
   position: relative;
   top: 10vw;
   width: 99vw;
   z-index: -10;
 }
 
-main > div {
+#projets > div {
   position: absolute;
-  height: 200vh;
   top: -2vw;
   width: 84vw;
   margin-left: 4vw;
 }
 
-main > div > div:first-child {
+#projets > div > div:first-child {
   background-color: white;
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
 }
 
-main > div > div:last-child {
+#projets > div > div:last-child {
   height: 2%;
 }
 
-main .firstContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding-top: 4vw;
-  justify-content: space-around;
-}
-
-main .firstContainer .left {
-  width: 28vw;
-  height: 28vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 1vw;
-}
-
-main .firstContainer .middle {
-  width: 28vw;
-  height: 28vw;
-  padding: 3vw;
-  border-radius: 14vw;
-  border: solid 0.2vw rgb(179, 179, 179);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-main .firstContainer .right {
-  width: 28vw;
-  height: 28vw;
-  padding-left: 4vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-main .firstContainer .left h1 {
-  width: 19vw;
-  font-size: 3.3vw;
-  color: black;
-}
-
-main .firstContainer .left p {
-  width: 12vw;
-  font-size: 1vw;
-  margin-top: 2vw;
-  padding: 1vw;
-  text-align: center;
-  color: white;
-  background-color: black;
-  border-radius: 1vw;
-}
-
-main .firstContainer .middle .buttonPlay {
-  width: 8vw;
-  height: 8vw;
-  background-image: url("../assets/icon.png");
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4vw;
-}
-
-main .firstContainer .middle .buttonPlay > svg {
-  width: 2.5vw;
-  height: 2.5vw;
-  padding-left: 0.5vw;
-  display: block;
-}
-
-main .firstContainer .middle h1 {
-  height: 2vw;
-  font-size: 1.5vw;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-
-main .firstContainer .middle p {
-  height: 2vw;
-  text-align: center;
-  font-weight: 500;
-  font-size: 1.2vw;
-  color: rgb(88, 88, 88);
-}
-
-main .firstContainer .right h1 {
-  font-size: 1.5vw;
-  color: rgb(59, 59, 59);
-}
-
-main .firstContainer .right p {
-  font-size: 1vw;
-  width: 16vw;
-  color: rgb(88, 88, 88);
-}
-
-main .secondContainer {
+#projets .firstContainer {
+  padding-top: 3vw;
   position: relative;
-  height: 28.5vw;
-  margin-top: 8vw;
-}
-
-main .secondContainer > h1 {
-  font-size: 10.097vw;
-  letter-spacing: 0.3vw;
-  color: rgb(230, 230, 230);
-  margin-left: -0.83vw;
-}
-
-main .secondContainer > h2 {
-  position: absolute;
-  left: 9%;
-  top: 4vw;
-  font-size: 1.5vw;
-  color: rgb(48, 48, 48);
-}
-
-main .secondContainer > div {
-  position: absolute;
-  top: 9.5vw;
-  background-color: rgb(230, 230, 230);
-  width: 100%;
-}
-
-main .secondContainer div h1 {
-  margin-left: 9%;
-  margin-top: 5vw;
-  color: black;
-  font-size: 1.5vw;
-}
-
-main .secondContainer div p {
-  margin-left: 9%;
-  margin-right: 9%;
-  margin-top: 1vw;
-  color: black;
-  font-size: 1vw;
-  text-align: justify;
-  padding-bottom: 5vw;
-}
-
-main .secondContainer div p > strong {
-  color: rgb(70, 70, 70);
-}
-
-main .thirdContainer {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   top: 0;
+  padding-bottom: 3vw;
 }
 
-main .intersection {
-  margin-top: 5vw;
-  margin-bottom: 1vw;
-  width: 100%;
-  height: 6vw;
-}
-
-main .thirdContainer > h1, main .fourthContainer > h1 {
+#projets .firstContainer > h1 {
   color: black;
   text-align: center;
   font-size: 5vw;
   font-weight: 600;
 }
 
-main .thirdContainer > h2, main .fourthContainer > h2 {
+#projets .firstContainer > h2 {
   color: rgb(110, 110, 110);
   text-align: center;
   font-size: 2vw;
@@ -243,47 +90,4 @@ main .thirdContainer > h2, main .fourthContainer > h2 {
   font-size: 1vw;
   text-align: center;
   color: black;
-}
-
-main .fourthContainer {
-  position: relative;
-  top: 0;
-  padding-bottom: 3vw;
-}
-
-.valeursContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 3vw;
-  row-gap: 2vw;
-}
-
-.valeurCard {
-  border-radius: 1vw;
-  width: 90%;
-  padding: 2vw;
-  margin-right: auto;
-  margin-left: auto;
-  box-shadow: 0 0 0.2vw 0 rgb(211, 211, 211);
-}
-
-.valeurCard .icon {
-  display: inline-block;
-  width: 4vw;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.valeurCard h1 {
-  width: 25vw;
-  padding-left: 1vw;
-  display: inline-block;
-  color: black;
-  font-size: 1.3vw;
-}
-
-.valeurCard p {
-  padding-top: 0.5vw;
-  font-size: 1vw;
-  text-align: justify;
 }
