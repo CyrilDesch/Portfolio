@@ -1,17 +1,9 @@
 import React, { useEffect } from "react";
 import '../styles/Projets.css';
-import Competence from "../components/Competence";
+import ProjectCard from "../components/ProjectCard";
 import { useLocation } from 'react-router-dom';
 
-//IMPORT ICON
-import AndroidIcon from '../assets/iconExt/android.svg';
-import CssHtmlIcon from '../assets/iconExt/css_html.svg';
-import FirebaseIcon from '../assets/iconExt/firebase.svg';
-import GitHubIcon from '../assets/iconExt/github.svg';
-import JavascriptIcon from '../assets/iconExt/javascript.svg';
-import NodeJSIcon from '../assets/iconExt/nodeJS.svg';
-import ReactIcon from '../assets/iconExt/react.svg';
-import TrelloIcon from '../assets/iconExt/trello.svg'
+import tabProject from "../assets/tabProject";
 
 const Projets = ({ setActivePath }) => {
 
@@ -27,22 +19,20 @@ const Projets = ({ setActivePath }) => {
         <div>
           <div>
             <div className="firstContainer">
-              <h1>LES PROJETS</h1>
-              <h2>SUR LESQUELS J'AI TRAVAILLÉ</h2>
-              <div className="competencesContainer">
-                <Competence icon={ReactIcon} title="React Native" desc={["○ Maitrise complète", "○ Tout type de projet"]} />
-                <Competence icon={JavascriptIcon} title="Javascript" desc={["○ Maitrise complète pour React Native"]} />
-                <Competence icon={AndroidIcon} title="Android/Java" desc={["○ Niveau intermédiaire"]} />
-                <Competence icon={CssHtmlIcon} title="HTML/CSS" desc={["○ Maitrise complète"]} />
-                <Competence icon={FirebaseIcon} title="Firebase" desc={["○ Bonne connaissance des outils", "○ Utilisation de Firestore"]} />
-                <Competence icon={NodeJSIcon} title="NodeJS" desc={["○ Niveau intermédiaire", "○ Capable de créer un back-end"]} />
-                <Competence icon={GitHubIcon} title="GitHub (versioning)" desc={["○ Maitrise complète", "○ Indispensable"]} />
-                <Competence icon={TrelloIcon} title="Trello (planification)" desc={["○ Maitrise complète", "○ Utilisation quotidienne"]} />
+              <h1>RÉALISATIONS</h1>
+              <div className="projectsContainer">
+                {tabProject.map((item) => 
+                  <ProjectCard 
+                    title={item.title}
+                    image={item.image}
+                    description={item.description}
+                    typeProject={item.typeProject}
+                    redirection={item.redirection}
+                  />
+                )}
               </div>
             </div>
           </div>
-          
-          <div />
         </div>
       </main>
     </>

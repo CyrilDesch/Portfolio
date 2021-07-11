@@ -1,6 +1,6 @@
 #projets {
   position: relative;
-  height: 50vw;
+  height: 60vw;
 }
 
 #projets p {
@@ -26,10 +26,6 @@
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
 }
 
-#projets > div > div:last-child {
-  height: 2%;
-}
-
 #projets .firstContainer {
   padding-top: 3vw;
   position: relative;
@@ -40,54 +36,55 @@
 }
 
 #projets .firstContainer > h1 {
-  color: black;
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 600;
+  font-size: 10.5vw;
+  letter-spacing: 0.38vw;
+  color: rgb(230, 230, 230);
+  margin-left: -0.83vw;
 }
 
-#projets .firstContainer > h2 {
-  color: rgb(110, 110, 110);
-  text-align: center;
-  font-size: 2vw;
-  font-weight: 600;
-}
-
-.competencesContainer {
+#projets .firstContainer > div {
+  position: relative;
+  top: -3vw;
+  background-color: rgb(230, 230, 230);
   width: 100%;
-  margin-top: 4vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4vw;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 3vw;
+  cursor: pointer;
 }
 
-.competenceContainer {
-  margin-right: auto;
-  margin-left: auto;
+#projets .projectContainer {
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 18vw;
+  border: solid white 0.05vw;
 }
 
-.competenceContainer .icon {
-  width: 7vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#projets .projectContainer > div {
+  background-color: rgba(0, 0, 0, 0.425);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.competenceContainer h3 {
-  font-size: 1vw;
-  text-align: center;
-  padding-top: 1.5vw;
-  padding-bottom: 0.5vw;
-  color: black;
+#projets .projectContainer:hover > div {
+  opacity: 1;
 }
 
-.competenceContainer ul {
-  list-style-type: none;
+#projets .projectContainer .title {
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 600;
 }
 
-.competenceContainer li {
-  width: 13vw;
-  font-size: 1vw;
-  text-align: center;
-  color: black;
+#projets .projectContainer .typeProject {
+  color: white;
+  margin-top: 0.5vw;
+  font-size: 0.9vw;
+  font-weight: 300;
 }
+

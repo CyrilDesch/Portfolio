@@ -26,10 +26,6 @@
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
 }
 
-#articles > div > div:last-child {
-  height: 2%;
-}
-
 #articles .firstContainer {
   padding-top: 3vw;
   position: relative;
@@ -53,41 +49,15 @@
   font-weight: 600;
 }
 
-.competencesContainer {
+.articlesContainer {
   width: 100%;
-  margin-top: 4vw;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 4vw;
+  height: 34vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.competenceContainer {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.competenceContainer .icon {
-  width: 7vw;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.competenceContainer h3 {
-  font-size: 1vw;
-  text-align: center;
-  padding-top: 1.5vw;
-  padding-bottom: 0.5vw;
-  color: black;
-}
-
-.competenceContainer ul {
-  list-style-type: none;
-}
-
-.competenceContainer li {
-  width: 13vw;
-  font-size: 1vw;
-  text-align: center;
-  color: black;
+.articlesContainer {
+  font-size: 2vw;
+  font-weight: 500;
 }

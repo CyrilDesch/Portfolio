@@ -1,6 +1,6 @@
 #presentation {
   position: relative;
-  height: 180vw;
+  height: 179vw;
 }
 
 #presentation p {
@@ -25,10 +25,6 @@
 #presentation > div > div:first-child {
   background-color: white;
   box-shadow: 1vw 0 5vw 0 rgba(0, 0, 0, 0.226);
-}
-
-#presentation > div > div:last-child {
-  height: 2%;
 }
 
 #presentation .firstContainer {
