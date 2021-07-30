@@ -13,7 +13,7 @@ import GitHubIcon from '../assets/iconExt/github.svg';
 import JavascriptIcon from '../assets/iconExt/javascript.svg';
 import NodeJSIcon from '../assets/iconExt/nodeJS.svg';
 import ReactIcon from '../assets/iconExt/react.svg';
-import TrelloIcon from '../assets/iconExt/trello.svg'
+import FlutterIcon from '../assets/iconExt/flutter.svg'
 
 const Presentation = ({ setActivePath }) => {
 
@@ -54,7 +54,7 @@ const Presentation = ({ setActivePath }) => {
               <div className="right">
                 <div>
                   <h1>Développer</h1>
-                  <p> Je suis développeur mobile spécialisé en React Native pour créer des applications Android et iOS.</p>
+                  <p> Je suis développeur mobile spécialisé en React Native et Flutter pour créer des applications Android et iOS.</p>
                 </div>
                 <div>
                   <h1>Conseiller</h1>
@@ -89,13 +89,13 @@ const Presentation = ({ setActivePath }) => {
               <h2>TECHNIQUES</h2>
               <div className="competencesContainer">
                 <Competence icon={ReactIcon} title="React Native" desc={["○ Maitrise complète", "○ Tout type de projet"]} />
+                <Competence icon={FlutterIcon} title="Flutter" desc={["○ Maitrise complète", "○ Tout type de projet"]} />
                 <Competence icon={JavascriptIcon} title="Javascript" desc={["○ Maitrise complète pour React Native"]} />
                 <Competence icon={AndroidIcon} title="Android/Java" desc={["○ Niveau intermédiaire"]} />
                 <Competence icon={CssHtmlIcon} title="HTML/CSS" desc={["○ Maitrise complète"]} />
                 <Competence icon={FirebaseIcon} title="Firebase" desc={["○ Bonne connaissance des outils", "○ Utilisation de Firestore"]} />
                 <Competence icon={NodeJSIcon} title="NodeJS" desc={["○ Niveau intermédiaire", "○ Capable de créer un back-end"]} />
                 <Competence icon={GitHubIcon} title="GitHub (versioning)" desc={["○ Maitrise complète", "○ Indispensable"]} />
-                <Competence icon={TrelloIcon} title="Trello (planification)" desc={["○ Maitrise complète", "○ Utilisation quotidienne"]} />
               </div>
             </div>
             <div className="fourthContainer">
