@@ -1,5 +1,12 @@
 const tabProject = [
   {
+    title: "Application de Finance",
+    redirection: "https://github.com/CyrilDesch/FinanceAppDesign/blob/main/README.md",
+    description: "Reproduction d'un design coder en Flutter",
+    image: "./assets/app_finance.jpg",
+    typeProject: "app",
+  },
+  {
     title: "Healven",
     redirection: 'https://github.com/CyrilDesch/HealvenApp/blob/master/README.md',
     description: "Le but de ce projet personnel était de développer une application similaire à Runtastic, qui permet de suivre vos entrainements de course. Healven permet de créer un compte et de garder l'historique de ses entrainements au travers d'une carte. Afin d'accomplir ce projet, j'ai appris à mettre en place un Back-End de A à Z. Pour ce projet, j'ai utilisé ExpressJS. En ce qui concerne React Native, j'ai d'abord appris à créer un tracker et à l'optimiser au mieux pour réduire l'utilisation de la batterie. Par la suite, j'ai créé l'interface de l'application. Il ne me restait donc qu'à relier les données avec l'API et ma base de données MongoDB.",
