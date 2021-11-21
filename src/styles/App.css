@@ -120,12 +120,12 @@ header .iconUp {
   height: 3.5vw;
   position: fixed;
   bottom: 0.6vw;
-  right: 2.4vw;
+  right: 1vw;
   z-index: 150;
-  background-color: white;
+  background-color: #867984;
   padding: 0.1vw;
   border-radius: 2.5vw;
-  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.432);
+  box-shadow: 0 0px 2px 0px #cbb8c7;
   cursor: pointer;
 }
 
@@ -168,14 +168,16 @@ footer div:first-child .barTitle {
 }
 
 .code {
-  width: 18vw;
+  width: 25vw;
   font-size: 1.1vw;
   align-self: center;
   font-family: "Source Code Pro";
   font-weight: 400;
 }
 
-pre {
+pre,
+pre span {
+  font-family: "Source Code Pro";
   margin: 0;
 }
 

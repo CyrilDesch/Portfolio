@@ -1,4 +1,7 @@
 html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: #7b6d78 white;
   width: 100%;
 }
 
@@ -15,7 +18,6 @@ html {
 }
 
 body {
-  overflow: overlay;
   min-height: 100vh;
   width: 100%;
   margin: 0;
