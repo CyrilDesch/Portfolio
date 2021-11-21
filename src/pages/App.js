@@ -105,25 +105,26 @@ const App = () => {
                     Articles
                   </Link>
                 </li>
-                <li className="menuLink">
-                  <SocialIcon
-                    url="https://www.instagram.com/cyrildesch/"
-                    bgColor="white"
-                    style={{ height: "3vw", width: "3vw" }}
-                  />
-                  <SocialIcon
-                    url="https://github.com/CyrilDesch"
-                    bgColor="white"
-                    style={{ height: "3vw", width: "3vw" }}
-                  />
-                  <SocialIcon
-                    url="https://www.linkedin.com/in/cyril-deschamps-7377681b7/"
-                    bgColor="white"
-                    style={{ height: "3vw", width: "3vw" }}
-                  />
-                </li>
               </ul>
             </nav>
+
+            <div className="menuLink">
+              <SocialIcon
+                url="https://www.instagram.com/cyrildesch/"
+                bgColor="white"
+                style={{ height: "3vw", width: "3vw" }}
+              />
+              <SocialIcon
+                url="https://github.com/CyrilDesch"
+                bgColor="white"
+                style={{ height: "3vw", width: "3vw" }}
+              />
+              <SocialIcon
+                url="https://www.linkedin.com/in/cyril-deschamps-7377681b7/"
+                bgColor="white"
+                style={{ height: "3vw", width: "3vw" }}
+              />
+            </div>
             <span class="code">
               <pre class="vert">{`/* Création */`}</pre>
               <pre>
