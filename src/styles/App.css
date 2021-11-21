@@ -9,15 +9,23 @@ header ul {
 }
 
 header .left {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 92vw;
-  height: 80vh;
-  background-image: url("../assets/profil.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
+  height: 50vw;
+  max-height: 80vh;
+  background: rgb(55, 47, 61);
+  background: linear-gradient(
+    36deg,
+    rgba(55, 47, 61, 1) 0%,
+    rgba(220, 199, 204, 1) 100%
+  );
 }
 
 header .menu {
+  position: absolute;
+  top: 0;
   width: 92vw;
   display: flex;
   flex-direction: row;
@@ -42,12 +50,12 @@ header .menuContainer a {
   font-weight: 400;
   font-size: 1.1vw;
   margin: 1.5vw;
-  text-decoration: none; 
-  position: relative; 
+  text-decoration: none;
+  position: relative;
   cursor: pointer;
 }
 
-header .menuContainer a:after{
+header .menuContainer a:after {
   content: "";
   position: absolute;
   width: 0;
@@ -56,10 +64,10 @@ header .menuContainer a:after{
   bottom: -0.3vw;
   margin-left: 0.09vw;
   background-color: white;
-  transition: width .2s;
+  transition: width 0.2s;
 }
 
-header .menuContainer .active:after{
+header .menuContainer .active:after {
   width: 1vw;
 }
 
@@ -74,9 +82,12 @@ header .menuLink a {
 }
 
 header .right {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 8vw;
-  height: 80vh;
+  height: 50vw;
+  max-height: 80vh;
   background-color: white;
 }
 
@@ -84,43 +95,24 @@ header .right {
   height: 100%;
   width: 100%;
 }
-  
+
 .text {
   font-family: "Arial", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
-}
-
-.text-stroke {
-  fill: none;
-  stroke: black;
-  stroke-width: 1.4vw;
-  stroke-dashoffset: -900;
-  stroke-dasharray: 900;
-  stroke-linecap: butt;
-  stroke-linejoin: round;
-  animation: 3s dash 2s infinite alternate;
+  transform: rotate(90deg);
+  font-size: min(12.8vh, 6.5vw);
+  padding-top: 0.5vw;
+  color: black;
 }
 
 @keyframes dash {
   from {
     stroke-dashoffset: -900;
-  } to {
+  }
+  to {
     stroke-dashoffset: 0;
   }
-}
-
-header .left .txt-rotate {
-  font-weight: 200;
-  font-size: 4vw;
-  position: absolute;
-  bottom: 3vw;
-  left: 3.8vw;
-  line-height: 4.4vw;
-  height: 4.4vw;
-}
-
-header .left .wrap {
-  padding-right: 0.5vw;
 }
 
 header .iconUp {
@@ -142,26 +134,22 @@ footer {
   flex-direction: row;
   width: 100vw;
   height: 5vw;
-  border-top: solid 0.3vw rgb(235, 235, 235);
+  border-top: solid 0.3vw #867984;
+  background-color: #7b6d78;
 }
 
 footer div:first-child {
-  width: 92vw;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(204, 204, 204);
   justify-content: space-around;
 }
 
-footer div:last-child {
-  background-color: rgb(235, 235, 235);
-  width: 8vw;
-}
-
 footer div:first-child p {
+  width: 10vw;
   user-select: all;
-  color: #313131;
+  color: white;
   font-size: 1vw;
   text-align: center;
   width: 20vw;
@@ -175,6 +163,22 @@ footer div:first-child .icon {
 }
 
 footer div:first-child .barTitle {
-  color: black;
+  color: white;
   font-weight: 300;
+}
+
+.code {
+  width: 18vw;
+  font-size: 1.1vw;
+  align-self: center;
+  font-family: "Source Code Pro";
+  font-weight: 400;
+}
+
+pre {
+  margin: 0;
+}
+
+.wrap {
+  font-family: "Source Code Pro";
 }
