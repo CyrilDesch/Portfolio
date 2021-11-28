@@ -7,13 +7,6 @@
   color: black;
 }
 
-#articles .postItBG {
-  position: relative;
-  top: 10vw;
-  width: 99vw;
-  z-index: -10;
-}
-
 #articles > div {
   position: absolute;
   top: -2vw;

@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
-import '../styles/Articles.css';
-import { useLocation } from 'react-router-dom';
+import "../styles/Articles.css";
+import { useLocation } from "react-router-dom";
 
 const Articles = ({ setActivePath }) => {
-
   const location = useLocation().pathname;
   useEffect(() => {
     setActivePath(location);
   });
 
-  return(
+  return (
     <>
       <main id="articles">
-        <img className="postItBG" src="./assets/postit.png" alt="Post it BG" />
         <div>
           <div>
             <div className="firstContainer">
@@ -27,6 +25,6 @@ const Articles = ({ setActivePath }) => {
       </main>
     </>
   );
-}
+};
 
 export default Articles;

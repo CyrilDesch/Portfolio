@@ -3,6 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   box-shadow: 0 0px 50px 0px rgba(66, 6, 9, 0.507);
+  z-index: 20;
 }
 
 header ul {
@@ -14,8 +15,7 @@ header .left {
   flex-direction: column;
   justify-content: center;
   width: 94vw;
-  height: 25vw;
-  max-height: 80vh;
+  height: 45vh;
   background: rgb(55, 47, 61);
   background: linear-gradient(
     36deg,
@@ -36,8 +36,8 @@ header .menu {
 
 header .icon {
   padding: 1vw;
-  width: 5vw;
-  height: 5vw;
+  width: 10vh;
+  height: 10vh;
   margin-left: 2vw;
   margin-top: 1vw;
 }
@@ -52,10 +52,10 @@ header .menuContainer {
 
 header .menuContainer a {
   font-weight: 400;
-  width: 8vw;
+  width: 15vh;
   text-align: center;
-  font-size: 1.1vw;
-  margin: 1.5vw;
+  font-size: 2vh;
+  margin: 1.5vh;
   text-decoration: none;
   position: relative;
   cursor: pointer;
@@ -81,7 +81,7 @@ header .menuLink {
   position: absolute;
   display: flex;
   flex-direction: column;
-  right: 7vw;
+  right: 8vw;
 }
 
 header .menuLink a {
@@ -93,7 +93,7 @@ header .right {
   justify-content: center;
   align-items: center;
   width: 6vw;
-  height: 25vw;
+  height: 45vh;
   max-height: 80vh;
   background-color: white;
 }
@@ -108,7 +108,7 @@ header .right {
   font-weight: 500;
   text-transform: uppercase;
   transform: rotate(90deg);
-  font-size: min(8.2vh, 4vw);
+  font-size: min(7vh, 4vw);
   padding-top: 0.5vw;
   color: black;
 }
@@ -123,26 +123,24 @@ header .right {
 }
 
 header .iconUp {
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 7vh;
+  height: 7vh;
   position: fixed;
-  bottom: 0.6vw;
+  bottom: 1.8vh;
   right: 0.6vw;
   z-index: 150;
   background-color: #867984;
   padding: 0.1vw;
-  border-radius: 2.5vw;
+  border-radius: 4vh;
   box-shadow: 0 0px 2px 0px #cbb8c7;
   cursor: pointer;
 }
 
 footer {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 5vw;
   border-top: solid 0.3vw #867984;
   background-color: #7b6d78;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 footer div:first-child {
@@ -154,18 +152,19 @@ footer div:first-child {
 }
 
 footer div:first-child p {
-  width: 10vw;
+  width: 40vh;
   user-select: all;
   color: white;
-  font-size: 1vw;
+  font-size: 1.8vh;
   text-align: center;
-  width: 20vw;
   font-weight: 600;
 }
 
 footer div:first-child .icon {
   width: 2.5vw;
   height: auto;
+  margin-left: -5vw;
+  margin-right: -7vw;
   cursor: pointer;
 }
 
@@ -177,7 +176,7 @@ footer div:first-child .barTitle {
 .code {
   width: 25vw;
   margin-top: 5vw;
-  font-size: 1vw;
+  font-size: 2vh;
   margin-left: 3vw;
   font-family: "Source Code Pro";
   font-weight: 400;
@@ -191,4 +190,77 @@ pre span {
 
 .wrap {
   font-family: "Source Code Pro";
+}
+
+header > div:first-child {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  header .iconUp {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  header > div:first-child {
+    display: block;
+  }
+
+  footer div:first-child {
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  footer div:first-child p {
+    font-size: 2vh;
+    width: 90vw;
+  }
+
+  footer div:first-child .icon {
+    width: 6vw;
+    margin: 3vw;
+  }
+
+  header .menuContainer {
+    display: none;
+  }
+
+  header .right {
+    display: none;
+  }
+
+  header .menuLink {
+    right: 3vw;
+  }
+  header .left {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .iconUp {
+    width: 4vh;
+    height: 4vh;
+  }
+
+  footer {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
+
+  footer div:first-child p {
+    font-size: 1.5vh;
+  }
+
+  footer div:first-child .icon {
+    width: 8vw;
+    margin: 3vw;
+  }
+
+  header .icon {
+    width: 8vh;
+    height: 8vh;
+    margin-left: 3vw;
+    margin-top: 3vw;
+  }
 }

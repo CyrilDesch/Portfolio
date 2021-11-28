@@ -106,18 +106,6 @@ const Presentation = ({ setActivePath }) => {
               </div>
             </div>
             <div className="thirdContainer">
-              <svg className="intersection" viewBox="0 0 200 300">
-                <line
-                  x1="100"
-                  x2="100"
-                  y1="40"
-                  y2="260"
-                  stroke="#998a95"
-                  strokeWidth="0.5vw"
-                  strokeLinecap="round"
-                  strokeDasharray="9, 16"
-                />
-              </svg>
               <h1>COMPÉTENCES</h1>
               <h2>TECHNIQUES</h2>
               <div className="competencesContainer">
@@ -170,18 +158,6 @@ const Presentation = ({ setActivePath }) => {
               </div>
             </div>
             <div className="fourthContainer">
-              <svg className="intersection" viewBox="0 0 200 300">
-                <line
-                  x1="100"
-                  x2="100"
-                  y1="40"
-                  y2="260"
-                  stroke="#998a95"
-                  strokeWidth="0.5vw"
-                  strokeLinecap="round"
-                  strokeDasharray="9, 16"
-                />
-              </svg>
               <h1>MES VALEURS</h1>
               <div className="valeursContainer">
                 <ValeurCard

@@ -6,6 +6,7 @@ import { SocialIcon } from "react-social-icons";
 import { animateScroll } from "react-scroll";
 import UpArrow from "../assets/UpArrow";
 import "../styles/App.css";
+import { slide as Menu } from "react-burger-menu";
 
 import Presentation from "./Presentation";
 import Projets from "./Projets";
@@ -82,6 +83,21 @@ const App = () => {
     <Router>
       <div>
         <header>
+          <Menu
+            styles={styles}
+            right
+            customBurgerIcon={<img src="./assets/burger.svg" />}
+          >
+            <a className="menu-item" href="/">
+              Présentation
+            </a>
+            <a className="menu-item" href="/projets">
+              Projets
+            </a>
+            <a className="menu-item" href="/articles">
+              Articles
+            </a>
+          </Menu>
           <div className="left">
             <nav>
               <ul className="menu">
@@ -110,19 +126,14 @@ const App = () => {
 
             <div className="menuLink">
               <SocialIcon
-                url="https://www.instagram.com/cyrildesch/"
-                bgColor="white"
-                style={{ height: "3vw", width: "3vw" }}
-              />
-              <SocialIcon
                 url="https://github.com/CyrilDesch"
                 bgColor="white"
-                style={{ height: "3vw", width: "3vw" }}
+                style={{ height: "6.5vh", width: "6.5vh" }}
               />
               <SocialIcon
                 url="https://www.linkedin.com/in/cyril-deschamps-7377681b7/"
                 bgColor="white"
-                style={{ height: "3vw", width: "3vw" }}
+                style={{ height: "6.5vh", width: "6.5vh" }}
               />
             </div>
             <span class="code">
@@ -210,8 +221,42 @@ const App = () => {
 
 export default App;
 
-const test = () => {
-  while (testUtils()) {}
-  render();
-  // todo
+var styles = {
+  bmBurgerButton: {
+    position: "absolute",
+    width: "4.5vh",
+    height: "4.5vh",
+    right: "4vw",
+    top: "5vw",
+  },
+  bmCrossButton: {
+    left: "1.5vh",
+    top: "1.5vh",
+  },
+  bmCross: {
+    background: "#bdc3c7",
+  },
+  bmMenuWrap: {
+    position: "fixed",
+    height: "100%",
+  },
+  bmMenu: {
+    background: "#3e3444",
+    padding: "2.5em 1.5em 0",
+    fontSize: "1.15em",
+  },
+  bmMorphShape: {
+    fill: "#e5dde3",
+  },
+  bmItemList: {
+    color: "#b8b7ad",
+    padding: "0.8em",
+  },
+  bmItem: {
+    display: "block",
+    paddingBottom: "0.8em",
+  },
+  bmOverlay: {
+    background: "rgba(0, 0, 0, 0.3)",
+  },
 };

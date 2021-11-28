@@ -1,24 +1,16 @@
 #projets {
   position: relative;
-  height: 60vw;
 }
 
 #projets p {
-  color: black;
-}
-
-#projets .postItBG {
-  position: relative;
-  top: 10vw;
-  width: 99vw;
-  z-index: -10;
+  color: #272727;
 }
 
 #projets > div {
-  position: absolute;
+  position: relative;
   top: -2vw;
-  width: 84vw;
-  margin-left: 4vw;
+  width: 90vw;
+  left: 5vw;
 }
 
 #projets > div > div:first-child {
@@ -27,19 +19,19 @@
 }
 
 #projets .firstContainer {
-  padding-top: 3vw;
+  width: 100%;
+  padding-top: 5vw;
   position: relative;
   display: flex;
   flex-direction: column;
   top: 0;
-  padding-bottom: 3vw;
 }
 
 #projets .firstContainer > h1 {
-  font-size: 10.5vw;
+  font-size: 11.46vw;
   letter-spacing: 0.38vw;
   color: rgb(230, 230, 230);
-  margin-left: -0.83vw;
+  margin-left: -1.05vw;
 }
 
 #projets .firstContainer > div {
@@ -51,6 +43,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding-top: 3vw;
   cursor: pointer;
+  margin-bottom: -3vw;
 }
 
 #projets .projectContainer {
@@ -58,6 +51,7 @@
   background-position: 50% 50%;
   height: 18vw;
   border: solid white 0.05vw;
+  cursor: pointer;
 }
 
 #projets .projectContainer > div {
@@ -87,4 +81,3 @@
   font-size: 0.9vw;
   font-weight: 300;
 }
-
