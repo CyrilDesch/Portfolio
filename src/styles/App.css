@@ -176,20 +176,20 @@ footer div:first-child .barTitle {
 .code {
   width: 25vw;
   margin-top: 5vw;
-  font-size: 2vh;
   margin-left: 3vw;
-  font-family: "Source Code Pro";
-  font-weight: 400;
 }
 
 pre,
 pre span {
-  font-family: "Source Code Pro";
+  font-size: 2vh;
+  font-family: "Montserrat";
+  letter-spacing: 0.1em;
   margin: 0;
+  padding-bottom: 0.2em;
 }
 
 .wrap {
-  font-family: "Source Code Pro";
+  font-family: "Montserrat";
 }
 
 header > div:first-child {

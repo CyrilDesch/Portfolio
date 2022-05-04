@@ -49,13 +49,13 @@ const Presentation = ({ setActivePath }) => {
                 </h1>
                 <a
                   className="buttonPlay clickable"
-                  href="https://www.youtube.com/watch?v=_2ZOnqaXYk4"
+                  href="https://www.youtube.com/watch?v=YYRwBxx2GbQ"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <PlayButton />
                 </a>
-                <p>Healven</p>
+                <p>Bacle</p>
               </div>
               <div className="right">
                 <div>
@@ -111,27 +111,35 @@ const Presentation = ({ setActivePath }) => {
               <div className="competencesContainer">
                 <Competence
                   icon={ReactIcon}
-                  title="React Native"
+                  title="React / React Native"
                   desc={["○ Maitrise complète", "○ Tout type de projet"]}
+                />
+                <Competence
+                  icon={NodeJSIcon}
+                  title="NodeJS"
+                  desc={[
+                    "○ Maitrise complète",
+                    "○ Création d'API",
+                  ]}
+                />
+                <Competence
+                  icon={JavascriptIcon}
+                  title="Typescript / Javascript"
+                  desc={["○ Maitrise complète"]}
                 />
                 <Competence
                   icon={FlutterIcon}
                   title="Flutter"
-                  desc={["○ Maitrise complète", "○ Tout type de projet"]}
-                />
-                <Competence
-                  icon={JavascriptIcon}
-                  title="Javascript"
-                  desc={["○ Maitrise complète pour React Native"]}
+                  desc={["○ Maitrise légère"]}
                 />
                 <Competence
                   icon={AndroidIcon}
-                  title="Android/Java"
+                  title="Android / Java"
                   desc={["○ Niveau intermédiaire"]}
                 />
                 <Competence
                   icon={CssHtmlIcon}
-                  title="HTML/CSS"
+                  title="HTML / CSS"
                   desc={["○ Maitrise complète"]}
                 />
                 <Competence
@@ -140,14 +148,6 @@ const Presentation = ({ setActivePath }) => {
                   desc={[
                     "○ Bonne connaissance des outils",
                     "○ Utilisation de Firestore",
-                  ]}
-                />
-                <Competence
-                  icon={NodeJSIcon}
-                  title="NodeJS"
-                  desc={[
-                    "○ Niveau intermédiaire",
-                    "○ Capable de créer un back-end",
                   ]}
                 />
                 <Competence

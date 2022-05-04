@@ -1,5 +1,12 @@
 const tabProject = [
   {
+    title: "Bacle",
+    redirection: "https://play.google.com/store/apps/details?id=com.bacle",
+    description: "xxx",
+    image: "./assets/bacle.jpg",
+    typeProject: "app",
+  },
+  {
     title: "Application de Finance",
     redirection: "https://github.com/CyrilDesch/FinanceAppDesign/blob/main/README.md",
     description: "Reproduction d'un design coder en Flutter",

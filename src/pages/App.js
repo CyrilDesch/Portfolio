@@ -11,8 +11,6 @@ import { slide as Menu } from "react-burger-menu";
 import Presentation from "./Presentation";
 import Projets from "./Projets";
 import Articles from "./Articles";
-import testUtils from "react-dom/test-utils";
-import { render } from "@testing-library/react";
 
 const App = () => {
   const scrolled = useScroll();
@@ -127,11 +125,13 @@ const App = () => {
             <div className="menuLink">
               <SocialIcon
                 url="https://github.com/CyrilDesch"
+                target={"_blank"}
                 bgColor="white"
                 style={{ height: "6.5vh", width: "6.5vh" }}
               />
               <SocialIcon
                 url="https://www.linkedin.com/in/cyril-deschamps-7377681b7/"
+                target={"_blank"}
                 bgColor="white"
                 style={{ height: "6.5vh", width: "6.5vh" }}
               />
@@ -146,32 +146,32 @@ const App = () => {
                 {` {`}
               </pre>
               <pre>
-                {` `}
+                {`   `}
                 <span class="violet">while</span>
                 {`(`}
                 <span class="yellow">estEnVie</span>
                 {`()){`}
               </pre>
               <pre>
-                {`   `}
-                <span class="yellow">croquerLaVieAPleinesDents</span>
+                {`      `}
+                <span class="yellow">entreprendre</span>
                 {`();`}
               </pre>
-              <pre>{` }`}</pre>
+              <pre>{`   }`}</pre>
               <pre>
-                {` `}
+                {`   `}
                 <span class="yellow">render</span>
                 {`(`}
               </pre>
               <pre>
-                {"   "}
+                {"        "}
                 <span
                   class="txt-rotate"
                   data-period="2000"
                   data-rotate='["//TODO: Développer votre projet"]'
                 ></span>
               </pre>
-              <pre>{` );`}</pre>
+              <pre>{`   );`}</pre>
               <pre>{`}`}</pre>
             </span>
           </div>
@@ -185,15 +185,15 @@ const App = () => {
             />
           ) : null}
         </header>
-
+        
         <Switch>
-          <Route exact path="/projets">
+          <Route path="/projets">
             <Projets setActivePath={setActivePath} />
           </Route>
-          <Route exact path="/articles">
+          <Route path="/articles">
             <Articles setActivePath={setActivePath} />
           </Route>
-          <Route exact path="/">
+          <Route path="/">
             <Presentation setActivePath={setActivePath} />
           </Route>
         </Switch>
