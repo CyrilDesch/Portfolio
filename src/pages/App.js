@@ -193,7 +193,7 @@ const App = () => {
           <Route path="/articles">
             <Articles setActivePath={setActivePath} />
           </Route>
-          <Route path="/">
+          <Route index>
             <Presentation setActivePath={setActivePath} />
           </Route>
         </Switch>
