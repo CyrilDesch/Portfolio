@@ -92,9 +92,6 @@ const App = () => {
             <a className="menu-item" href="/projets">
               Projets
             </a>
-            <a className="menu-item" href="/articles">
-              Articles
-            </a>
           </Menu>
           <div className="left">
             <nav>
