@@ -4,7 +4,7 @@ const Competence = ({ className, icon, title, desc }) => {
       <img className="icon" src={icon} alt="icon" />
       <h3>{title}</h3>
       <ul>
-        {desc.map(item => <li>{item}</li>)}
+        {desc.map(item => <li key={item}>{item}</li>)}
       </ul>
     </div>
   );

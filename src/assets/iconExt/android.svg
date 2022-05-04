@@ -60,13 +60,13 @@
        gradientTransform="scale(0.98734641,1.0128158)"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#263238"
+         stopColor="#263238"
          stop-opacity="0.2"
          offset="0%"
          id="stop13" />
       <stop
-         stop-color="#263238"
-         stop-opacity="0.02"
+         stopColor="#263238"
+         stopOpacity="0.02"
          offset="100%"
          id="stop15" />
     </linearGradient>
@@ -101,12 +101,12 @@
        id="radialGradient-30"
        gradientUnits="userSpaceOnUse">
       <stop
-         stop-color="#FFFFFF"
+         stopColor="#FFFFFF"
          stop-opacity="0.1"
          offset="0%"
          id="stop25" />
       <stop
-         stop-color="#FFFFFF"
+         stopColor="#FFFFFF"
          stop-opacity="0"
          offset="100%"
          id="stop27" />

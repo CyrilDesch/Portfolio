@@ -37,7 +37,7 @@ const App = () => {
           this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+        this.el.innerHTML = '<span className="wrap">' + this.txt + "</span>";
 
         var that = this;
         var delta = 150 - Math.random() * 100;
@@ -84,7 +84,7 @@ const App = () => {
           <Menu
             styles={styles}
             right
-            customBurgerIcon={<img src="./assets/burger.svg" />}
+            customBurgerIcon={<img src="./assets/burger.svg" alt="Icon menu"/>}
           >
             <a className="menu-item" href="/">
               Présentation
@@ -136,37 +136,37 @@ const App = () => {
                 style={{ height: "6.5vh", width: "6.5vh" }}
               />
             </div>
-            <span class="code">
-              <pre class="vert">{`/* Création */`}</pre>
+            <span className="code">
+              <pre className="vert">{`/* Création */`}</pre>
               <pre>
-                <span class="bleu">{`const `}</span>
-                <span class="yellow">Cyril</span>
+                <span className="bleu">{`const `}</span>
+                <span className="yellow">Cyril</span>
                 {` = () `}
-                <span class="bleu">{"=>"}</span>
+                <span className="bleu">{"=>"}</span>
                 {` {`}
               </pre>
               <pre>
                 {`   `}
-                <span class="violet">while</span>
+                <span className="violet">while</span>
                 {`(`}
-                <span class="yellow">estEnVie</span>
+                <span className="yellow">estEnVie</span>
                 {`()){`}
               </pre>
               <pre>
                 {`      `}
-                <span class="yellow">entreprendre</span>
+                <span className="yellow">entreprendre</span>
                 {`();`}
               </pre>
               <pre>{`   }`}</pre>
               <pre>
                 {`   `}
-                <span class="yellow">render</span>
+                <span className="yellow">render</span>
                 {`(`}
               </pre>
               <pre>
                 {"        "}
                 <span
-                  class="txt-rotate"
+                  className="txt-rotate"
                   data-period="2000"
                   data-rotate='["//TODO: Développer votre projet"]'
                 ></span>
@@ -176,7 +176,7 @@ const App = () => {
             </span>
           </div>
           <div className="right">
-            <p class="text">FREELANCE</p>
+            <p className="text">FREELANCE</p>
           </div>
           {scrolled ? (
             <UpArrow

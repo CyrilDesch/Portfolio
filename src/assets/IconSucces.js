@@ -2,10 +2,10 @@ const IconSucces = ({ className }) => {
   return(
     <svg className={className} viewBox="0 0 512 512">
       <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="497" y2="0">
-        <stop offset="0" stop-color="#fd5900"/><stop offset="1" stop-color="#ffde00"/>
+        <stop offset="0" stopColor="#fd5900"/><stop offset="1" stopColor="#ffde00"/>
       </linearGradient>
       <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="512" y2="0">
-        <stop offset="0" stop-color="#ffe59a"/><stop offset="1" stop-color="#ffffd5"/>
+        <stop offset="0" stopColor="#ffe59a"/><stop offset="1" stopColor="#ffffd5"/>
       </linearGradient>
       <g>
         <g>

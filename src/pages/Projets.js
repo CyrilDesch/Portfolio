@@ -21,6 +21,7 @@ const Projets = ({ setActivePath }) => {
               <div className="projectsContainer">
                 {tabProject.map((item) => (
                   <ProjectCard
+                    key={item.title}
                     title={item.title}
                     image={item.image}
                     description={item.description}

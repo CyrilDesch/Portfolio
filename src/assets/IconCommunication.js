@@ -2,7 +2,7 @@ const IconCommunication = ({ className }) => {
   return(
     <svg className={className} viewBox="0 0 512 512">
       <g>
-        <g clip-rule="evenodd" fill-rule="evenodd">
+        <g clipRule="evenodd" fillRule="evenodd">
           <path d="m223.685 324.372h64.658c21.091 6.321 39.375 18.68 39.375 32.91v84.444h-143.407v-84.444c0-14.23 18.255-26.589 39.374-32.91z" fill="#ebd2ff"/>
           <path d="m303.453 357.282v84.444h24.265v-84.444c0-14.23-18.284-26.589-39.375-32.91h-24.264c21.09 6.321 39.374 18.68 39.374 32.91z" fill="#d7bef0"/>
           <path d="m94.281 437.843h38.212l31.238-4.365 30.983 4.365h122.601l30.472-5.982 31.72 5.982h38.24v58.507h-323.466z" fill="#d09080"/>
