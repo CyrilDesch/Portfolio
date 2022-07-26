@@ -1,7 +1,7 @@
-import IconCommunication from '../assets/IconCommunication';
-import IconDecouverte from '../assets/IconDecouverte';
-import IconPassion from '../assets/IconPassion';
-import IconSucces from '../assets/IconSucces';
+import IconCommunication from '../assets/icons/IconCommunication';
+import IconDecouverte from '../assets/icons/IconDecouverte';
+import IconPassion from '../assets/icons/IconPassion';
+import IconSucces from '../assets/icons/IconSucces';
 
 const ValeurCard = ({ title, paragraphe, presetIcon }) => {
 

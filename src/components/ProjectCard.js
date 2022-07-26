@@ -1,4 +1,4 @@
-import clicking from "../assets/clicking.png";
+import clicking from "../assets/icons/clicking.png";
 
 const ProjectCard = ({ title, image, redirection, typeProject }) => {
   return (

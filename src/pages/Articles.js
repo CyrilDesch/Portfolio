@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../styles/Articles.css";
+import "../assets/styles/Articles.css";
 import { useLocation } from "react-router-dom";
 
 const Articles = ({ setActivePath }) => {

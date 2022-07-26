@@ -43,9 +43,8 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           script: |
             docker stop portfolio
-            docker rm portfolio
             docker build -t portfolio /home/cyril/cyrildeschamps/
-            docker run -d --name portfolio -p 80:80 -t portfolio
+            docker run --rm -d --network reverse-proxy --name portfolio -t portfolio
 
       - uses: borales/actions-yarn@v3.0.0
         with:

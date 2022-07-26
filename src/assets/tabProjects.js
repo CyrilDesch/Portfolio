@@ -1,9 +1,9 @@
-import bacle from "./bacle.jpg";
-import appFinance from "./app_finance.jpg";
-import healven from "./healven.jpg";
-import portfolio from "./portfolio.jpg";
-import ruckfield from "./ruckfield.jpg";
-import foodyril from "./foodyril.jpg";
+import bacle from "./appsImages/bacle.jpg";
+import appFinance from "./appsImages/app_finance.jpg";
+import healven from "./appsImages/healven.jpg";
+import portfolio from "./appsImages/portfolio.jpg";
+import ruckfield from "./appsImages/ruckfield.jpg";
+import foodyril from "./appsImages/foodyril.jpg";
 
 const tabProject = [
   {

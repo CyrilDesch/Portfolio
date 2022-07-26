@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import useScroll from "../hooks/useScroll";
-import AppIcon from "../assets/AppIcon";
+import useScroll from "../services/useScroll";
+import AppIcon from "../assets/icons/AppIcon";
 import { SocialIcon } from "react-social-icons";
 import { animateScroll } from "react-scroll";
-import UpArrow from "../assets/UpArrow";
-import "../styles/App.css";
+import UpArrow from "../assets/icons/UpArrow";
+import "../assets/styles/App.css";
 import { slide as Menu } from "react-burger-menu";
-import burgerMenuIcon from "../assets/burger.svg";
-
+import burgerMenuIcon from "../assets/icons/burger.svg";
 import Presentation from "./Presentation";
 import Projets from "./Projets";
 import Articles from "./Articles";

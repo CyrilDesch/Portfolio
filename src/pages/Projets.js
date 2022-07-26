@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import "../styles/Projets.css";
+import "../assets/styles/Projets.css";
 import ProjectCard from "../components/ProjectCard";
 import { useLocation } from "react-router-dom";
 
-import tabProject from "../assets/tabProject";
+import tabProject from "../assets/tabProjects";
 
 const Projets = ({ setActivePath }) => {
   const location = useLocation().pathname;

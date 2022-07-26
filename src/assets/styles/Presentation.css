@@ -77,7 +77,7 @@
 #presentation .firstContainer .middle .buttonPlay {
   width: 8vw;
   height: 8vw;
-  background-image: url("../assets/bacle_icon.png");
+  background-image: url("../icons/bacle_icon.png");
   background-size: cover;
   display: flex;
   justify-content: center;

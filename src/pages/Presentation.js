@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import "../styles/Presentation.css";
-import PlayButton from "../assets/PlayButton";
+import "../assets/styles/Presentation.css";
+import PlayButton from "../assets/icons/PlayButton";
 import Competence from "../components/Competence";
 import ValeurCard from "../components/ValeurCard";
 import { useLocation, Link } from "react-router-dom";
 
 //IMPORT ICON
-import AndroidIcon from "../assets/iconExt/android.svg";
-import CssHtmlIcon from "../assets/iconExt/css_html.svg";
-import FirebaseIcon from "../assets/iconExt/firebase.svg";
-import GitHubIcon from "../assets/iconExt/github.svg";
-import JavascriptIcon from "../assets/iconExt/javascript.svg";
-import NodeJSIcon from "../assets/iconExt/nodeJS.svg";
-import ReactIcon from "../assets/iconExt/react.svg";
-import FlutterIcon from "../assets/iconExt/flutter.svg";
+import AndroidIcon from "../assets/icons/iconExt/android.svg";
+import CssHtmlIcon from "../assets/icons/iconExt/css_html.svg";
+import FirebaseIcon from "../assets/icons/iconExt/firebase.svg";
+import GitHubIcon from "../assets/icons/iconExt/github.svg";
+import JavascriptIcon from "../assets/icons/iconExt/javascript.svg";
+import NodeJSIcon from "../assets/icons/iconExt/nodeJS.svg";
+import ReactIcon from "../assets/icons/iconExt/react.svg";
+import FlutterIcon from "../assets/icons/iconExt/flutter.svg";
 
 const Presentation = ({ setActivePath }) => {
   const location = useLocation().pathname;
@@ -62,16 +62,14 @@ const Presentation = ({ setActivePath }) => {
                   <h1>Développer</h1>
                   <p>
                     {" "}
-                    Je suis développeur mobile spécialisé en React Native et
-                    Flutter pour créer des applications Android et iOS.
+                    Je suis développeur mobile et web spécialisé en React Native et ReactJS
+                    afin créer des applications sur ces plateformes.
                   </p>
                 </div>
                 <div>
                   <h1>Conseiller</h1>
                   <p>
-                    J'accompagne les entreprises dans la réalisation et la
-                    maintenance de leur application mobile sur tout type de
-                    projets et à n'importe quel stade d'avancement.
+                    J'accompagne les entreprises dans leur digitalisation en tant que développeur et consultant sur des projets d'applications web et mobiles.
                   </p>
                 </div>
                 <div>
@@ -93,7 +91,7 @@ const Presentation = ({ setActivePath }) => {
                   très débrouillard et d’une grande ouverture d’esprit, j’ai
                   acquis de nombreuses connaissances dans divers domaines et
                   notamment dans le développement informatique et la création de
-                  projet. Par cet apprentissage, la programmation et
+                  projet. Par cet apprentissage autodidacte et universitaire, la programmation et
                   l'entrepreneuriat sont devenues mes principales passions. De
                   plus, mes études d’informatiques m’ont beaucoup apporté dans
                   ces deux passions.{" "}
